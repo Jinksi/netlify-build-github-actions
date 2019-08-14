@@ -20,6 +20,10 @@
            run: curl -X POST -d {} YOUR_BUILD_HOOK
    ```
 
-1. Adjust the `cron` settings to determine how often the build will be triggered. See the [Github Actions Docs](https://help.github.com/en/articles/events-that-trigger-workflows#scheduled-events) for more info.
+1. Adjust the `cron` settings to determine how often the build will be triggered.  
+   `15 8 * * *` would run every day at 0815  
+   `0 0,12 * * *` would run at midday and midnight every day  
+   [crontab guru](https://crontab.guru/#0_0,12_*_*_*) can help you generate the correct cron syntax.  
+   See the [Github Actions Docs](https://help.github.com/en/articles/events-that-trigger-workflows#scheduled-events) for more info.
 
 1. Open the _Actions_ tab in you Github repo to watch the workflow complete. 🎉
