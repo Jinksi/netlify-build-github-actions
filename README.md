@@ -1,4 +1,4 @@
-# Trigger Netlify build using Github Actions Schedule Event
+### ⏰ Trigger Netlify builds on a schedule using Github Actions
 
 1. Add a [Build hook](https://www.netlify.com/docs/webhooks/#incoming-webhooks) to your site using the [Netlify Dashboard](https://app.netlify.com/)
 
